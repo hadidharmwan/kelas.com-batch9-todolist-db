@@ -16,6 +16,7 @@ const updateUser = async (name, email, password, id) => {
     const [result] = await UserRepo.updateData(name, email, password, id);
     console.log(result);
 }
+//
 
 const deleteUser = async (id) => {
     const [result] = await UserRepo.deleteData(id);
